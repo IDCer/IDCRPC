@@ -14,17 +14,7 @@ public class RpcServerApplicationTests {
 
     @Test
     public void contextLoads() {
-        // 新建服务功能
-        MessageServiceImp messageServiceImp = new MessageServiceImp();
-        //发布卖煎饼的服务，注册在11234端口
-//        try {
-//            System.out.println("服务器发布了新的服务!");
-//            RPCServer.export(11234, messageServiceImp);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
-        // new version
+        // 创建一个注册中心
         RPCRegistryCenter rpcRegistryCenter = new RPCRegisterCenterImpl();
 
         // address
